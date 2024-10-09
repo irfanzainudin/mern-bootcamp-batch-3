@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>❤️ Love letter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <button id="display-btn" onclick="displayletter()">Display letter</button>
+        <article id="love-letter">
+            <hgroup>
+                <h1>Buat ibubapaku yang tercinta</h1>
+                <small>Semoga syurga buatmu berdua</small>
+            </hgroup>
+            <p>Salam buat ayahanda bonda yang tersayang, apa khabar kalian di tanah air? Semoga sihat selalu di bawah Lindungan Tuhan Yang Maha Perkasa, pintaku.</p>
+            <p>Anakanda sihat sahaja berkelana di tanah orang, di bumi Down Under yang jauh terpencil dari seluruh warga dunia yang lain. Saya memohon ayahanda dan bonda tidak lupakan anakanda di dalam doamu kepada Tuhan Yang Maha Pemurah.</p>
+            <p>Apa khabar adik-beradik dan orang kampung halaman? Lama sudah saya tidak pulang, menjadikan hati ini meronta-ronta merindui semua orang. Terakhir saya dengar, adik sudah berjaya menamatkan pengajiannya di Universiti Malaya. Amat gembira saya mendengar berita itu. Saya doakan agar perjalanannya menempuh alam pekerjaan dipermudahkan Tuhan Yang Maha Penyayang. Adik bongsu ku dengar masih bertarung dengan FYP nya yang memutihkan rambut kepala. Buatnya ku titipkan doa agar dipermudahkan segala urusan dan agar dia berjaya menamatkan pengajian dengan jayanya.</p>
+            <p>Abang sulong pula ku dengar sudah berjaya menamatkan pengajiannya di New Zealand. Syukur alhamdulillah. Sekarang ni sudah merancang untuk menjadi raja sehari tidak lama lagi hihi. Dengan izinNya, anakanda akan pulang untuk meraikan majlis dan menyambut sekali ahli baru keluarga kita.</p>
+            <p>Sampai di sini sahaja surat anakanda kali ini. Segala tulisan kata yang menyinggung perasaan amat ku kesali, tapi bukan niatku untuk menyakiti. Semoga umur kita panjang untuk berjumpa ketika majlis perkahwinan abang sulong biiznillah.</p>
+            <br/>
+            <br/>
+            <br/>
+            <p style="text-align: right;">Yang benar,</p>
+            <p style="text-align: right;"><b>Irfan Zainudin</b></p>
+        </article>
+    </main>
+    <script>
+        function displayletter() {
+            const btn = document.getElementById("display-btn");
+            const ll = document.getElementById("love-letter");
+            if (ll.style.display === "none") {
+                ll.style.display = "block";
+            } else {
+                ll.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

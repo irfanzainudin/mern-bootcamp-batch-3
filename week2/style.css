@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* background-color: whitesmoke; */
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo .bi {
+    font-size: xx-large;
+}
+
+.socmed {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    list-style: none;
+    margin: 1.5rem auto;
+    padding: 1rem;
+    background-color: black;
+    width: 80vw;
+    border-radius: 20px;
+    color: whitesmoke;
+
+    /* FLEX */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li {
+    display: inline;
+    padding: 1rem;
+}
+
+#login-btn {
+    padding: 1rem;
+    background-color: gold;
+    border: none;
+    border-radius: 10px;
+}
+
+.banner {
+    width: 100%;
+    background-color: gold;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    text-align: center;
+}
+
+.banner li {
+    display: inline;
+    padding: 1rem;
+    color: goldenrod;
+    font-size: xx-large;
+}
+
+#center-banner-text {
+    color: black;
+}
+
+/* MAIN */
+
+main {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+    text-align: center;
+}
+
+.book-list {
+    width: 50%;
+    margin: auto;
+
+    /* FLEX */
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    justify-content: center;
+}
+
+.card {
+    width: 30%;
+    padding: 1rem;
+    border: solid 1px darkgray;
+    border-radius: 20px;
+    background-color: white;
+    text-align: left;
+}
+
+.card img {
+    width: 100%;
+    min-height: 50%;
+    /* height: 50%; */
+    border-radius: 10px;
+}
+
+.card .author {
+    margin-bottom: 2rem;
+}
+
+.card .reviews {
+    margin-bottom: 2rem;
+    font-size: small;
+}
+
+.card .reviews .pill {
+    padding: .5rem;
+    border: solid 1px black;
+    border-radius: 20px;
+}
+
+.greyed-out {
+    opacity: 50%;
+}
+
+/* FOOTER */
+
+footer {
+    width: 80%;
+    margin: 1rem auto 0 auto;
+    /* FLEX */
+    display: flex;
+    flex-direction: column;
+}
+
+#upper-footer-div {
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1.5rem 1rem;
+
+    /* FLEX */
+    display: flex;
+    justify-content: space-between;
+}
+
+#upper-footer-div a {
+    margin-left: 1rem;
+}
+
+#lower-footer-div {
+    color: whitesmoke;
+    background-color: black;
+    padding: 1rem;
+
+    /* FLEX */
+    display: flex;
+    justify-content: space-between;
+}
+
+#lower-footer-div a {
+    margin-left: 1rem;
+    font-size: small;
+}
