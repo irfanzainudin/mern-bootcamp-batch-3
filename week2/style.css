@@ -159,3 +159,43 @@ footer {
     margin-left: 1rem;
     font-size: small;
 }
+
+@media only screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+
+    /* nav li {
+        display: block;
+    } */
+
+    #nav-links li {
+        display: block;
+    }
+
+    .banner li:not(#center-banner-text) {
+        display: none;
+    }
+    
+    .book-list {
+        width: 100%;
+    }
+    
+    .card {
+        width: 80%;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    #lower-footer-div {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .lfd-div {
+        display: flex;
+        justify-content: center;
+    }
+}
