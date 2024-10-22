@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Books</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <div class="logo">
+                    <i class="bi bi-plus-circle-fill"></i>
+                    <h1>&nbsp;&nbsp;BIG BOOKSHELF</h1>
+                </div>
+            </div>
+            <!-- <div id="nav-links">
+                <ul>
+                    <li>Books</li>
+                    <li>Authors</li>
+                    <li>What to read?</li>
+                    <li>Gift Ideas</li>
+                    <li>About Us</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><i class="bi bi-search"></i></li>
+                    <li><i class="bi bi-bookmark"></i></li>
+                    <li><i class="bi bi-bag"></i></li>
+                    <li><button id="login-btn">LOGIN</button></li>
+                </ul>
+            </div> -->
+        </nav>
+    </header>
+    <main>
+        <h1>REGISTER YOUR BOOK</h1>
+        <form method="post" action="javascript:alert('Successfully registered')">
+            <h2>Book Details</h2><hr />
+            <section class="book-details">
+                <div class="book-details-qs">
+                    <label>Title</label>
+                    <input type="text" id="title" name="title" placeholder="Your book title here. E.g. Harry Potter and The Fantastic Bootcamp" required />
+                </div>
+                <div class="book-details-qs">
+                    <label>Genre</label>
+                    <input type="text" id="Genre" name="Genre" placeholder="Your book genre here. E.g. Fantasy" required />
+                </div>
+                <div class="book-details-qs">
+                    <label>Author</label>
+                    <input type="text" id="author" name="author" placeholder="Your book author here. E.g. J. K. Rowling. Hover for allowed format" required pattern="[A-Za-z.\s]+" title="Allowed characters include a-z, A-Z, period. No other characters are allowed" />
+                </div>
+                <div class="book-details-qs">
+                    <label>Publisher</label>
+                    <input type="text" id="publisher" name="publisher" placeholder="Publisher of the book. E.g. Pustaka Melang" required />
+                </div>
+                <div class="book-details-qs">
+                    <label>Year Published</label>
+                    <input type="number" id="year-pub" name="year-pub" placeholder="1994" min="1500" max="2024" required />
+                </div>
+                <div class="book-details-qs">
+                    <label>Availability</label>
+                    <div class="book-details-qs-radio">
+                        <div>
+                            <input type="radio" id="availability" name="availability" />
+                            <label>Online</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="availability" name="availability" />
+                            <label>In store</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="availability" name="availability" />
+                            <label>Online & In store</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pages cannot be less than 1 page and no more than 1000 pages -->
+                <div class="book-details-qs">
+                    <label>Pages</label>
+                    <input type="number" id="pages" name="pages" placeholder="514" min="1" max="1000" required />
+                </div>
+                <div class="book-details-qs">
+                    <label>Language</label>
+                    <input type="text" id="language" name="language" placeholder="Language used in the book. E.g. English" required />
+                </div>
+            </section>
+            <h2>Registree Details</h2><hr />
+            <section class="registree-details">
+                <div class="registree-details-qs">
+                    <label>Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name. E.g. Lannah Yeon" required />
+                </div>
+                <div class="registree-details-qs">
+                    <label>Email</label>
+                    <input type="email" id="r_email" name="r_email" placeholder="Your email. E.g. l.yeon@email.com" required />
+                </div>
+            </section>
+            <div>
+                <input type="checkbox" id="agreement" name="agreement" required />
+                <label>I hereby agree to follow all rules and confirmed that all details are accurate</label>
+            </div>
+            <button type="submit" id="save-book-btn">SAVE YOUR BOOK</button>
+        </form>
+    </main>
+    <footer>
+        <div id="upper-footer-div">
+            <div class="logo">
+                <i class="bi bi-plus-circle-fill"></i>
+                &nbsp;&nbsp;BIG BOOKSHELF
+            </div>
+            <div class="socmed">
+                <a><i class="bi bi-instagram"></i></a>
+                <a><i class="bi bi-facebook"></i></a>
+                <a><i class="bi bi-twitter"></i></a>
+            </div>
+        </div>
+        <div id="lower-footer-div">
+            <div class="lfd-div">
+                <a>Terms and conditions</a>
+                <a>Privacy policy</a>
+            </div>
+            <div class="lfd-div">
+                <a>+44 1332 412251</a>
+                <a href="mailto:support@bbookshelf.com">support@bbookshelf.com</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
