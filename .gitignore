@@ -2,5 +2,7 @@ girl-with-pearl-earring.jpg
 language-as-an-abstraction-of-intention.txt
 .vscode/
 
+.DS_Store
+
 # Submissions
 *.zip
